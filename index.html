@@ -26,17 +26,16 @@ H: <input type="range" name="H" min="0" max="360" value="0" step="0.01" />
 	}
 </style>
 
+<script src="color.js"></script>
 <script>
 	/*
 		L = luminosity
-		J = lightness
-		Q = brightness
-		C = chroma
-		M = colourfulnes
-		s = saturation
-		H = hue
 		a = green-red
 		b = blue-yellow
+
+		J = lightness / Q = brightness
+		C = chroma / M = colourfulnes / s = saturation
+		H = hue composition / h = hue
 	*/
 	[WHITE_X, WHITE_Y, WHITE_Z] = [0.95047, 1, 1.08883]; // D65 white
 	function Lab(LCH) {
